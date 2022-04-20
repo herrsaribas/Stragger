@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: rgb(20, 20, 20);
+    --clr-bg:rgba(275, 275, 205, 0.9);
+    --clr-bg-white:rgba(275, 275, 275, 0.7);
+
+    /* font */
+
+    --ff:sans-serif;
+    --fs:18px;
+
+}
+
+body {
+    background-color: var(--clr-bg);
+}
+
+main {
+    display: grid;
+    place-items: center;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.container {
+    background-image: url(img/pug-life.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 800px;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.animated {
+    margin-top: 2rem;
+}
+
+
+h1 {
+    font-size: 2.8rem;
+    font-family: sans-serif;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    background-color: var(--clr-bg);
+    padding: 1rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+p {
+    /* margin-left: 3rem; */
+    margin-bottom: 0.5em;
+    background-color: rgba(275, 275, 275, 0.7);
+    border-radius: 25px;
+    width: fit-content;
+    padding: 1rem;
+    font-size: 1.5rem;
+    transform: translateX(-100px);
+    visibility: hidden;
+}
+
+
+
+.container:hover .one {
+    visibility: visible;
+    transform: translateX(0);
+    transition-delay: 0.3s;
+    transition-duration: .2s;
+}
+
+.container:hover .two {
+    visibility: visible;
+    transform: translateX(0);
+    transition-delay: 0.4s;
+    transition-duration: .2s;
+}
+
+.container:hover .three {
+    visibility: visible;
+    transform: translateX(0%);
+    transition-delay: 0.5s;
+    transition-duration: .2s;
+}
+
+
+
+
+
+
+
+
+
+
